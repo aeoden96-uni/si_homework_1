@@ -1,0 +1,61 @@
+Funkcionalni zahtjevi
+    -Igra ima main menu: -Start game
+                         -ScoreBoard
+                         -Exit
+    -Igra se pokuša updateati prilikom paljenja
+    -Igra čuva score svakog pokušaja igranja
+    -Pogled na trenutnu igru:
+                        -score
+                        -trenutna municija
+                        -health
+    -Pause menu
+
+Nefunkcionalni zahtjevi
+MUST
+    -Igra se piše u C++
+    -Koristi se state pattern kod glavnog menija
+    -Svaki character (entity) u igri (bio on NPC ili ne)
+        mora biti naslijeđen od Entity klase.
+    -Svaki character ima svoju Hitbox komponentu (kvadar u kojem se lik nalazi u svakom trenutku) te Movement komponentu (u njoj se računaju pokreti)
+SHOULD
+    -Collision i Score sustavi odvojeni od ostatka koda,preferabilno u posebnim klasama.
+COULD
+WANT
+    -Preferabilno postoji i Animation komponenta
+
+
+
+
+
+
+ZA SVAKI FUNC.ZAHTJEV:
+❑ Crta se use case dijagram.
+❑ Sastavlja se detaljna specifikacija u obliku tablice za svaki use case.
+
+
+Akteri
+    Igrač
+    Vrijeme
+    Server
+
+
+Use caseovi:Igrač
+    Pokreni igru
+        Movement:
+            Pokreti miša
+            WASD
+        Action:
+            L/D klik miša
+    Saveaj igru
+    Loadaj igru
+    Updateaj igru
+    Ugasi igru
+
+Use caseovi:Server/vrijeme (sekundarni akter?)
+    Provijeri verziju
+    Pošalji verziju
+    Ažuriraj/instaliraj
+    Ugasi instancu igre
+
+
+
